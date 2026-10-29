@@ -1,0 +1,11 @@
+{
+  "paired_comparison": "Random forest | SMOTE-ENN minus Random forest | class weight",
+  "test_f1_difference_ci95": [
+    -0.04314783868092688,
+    0.06168945248002106
+  ],
+  "fraud_cases_detected_only_by_class_weighted_rf": 1,
+  "fraud_cases_detected_only_by_smote_enn_rf": 0,
+  "exact_mcnemar_p_for_paired_fraud_detection": 1.0,
+  "note": "Paired comparison is restricted to the fraud cases in the untouched chronological test partition."
+}

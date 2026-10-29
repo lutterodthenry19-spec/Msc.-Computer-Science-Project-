@@ -1,0 +1,82 @@
+{
+  "dataset": "ULB European Credit Card Fraud Detection (Kaggle mlg-ulb/creditcardfraud)",
+  "rows": 284807,
+  "features": [
+    "Time",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20",
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28",
+    "Amount"
+  ],
+  "target": "Class",
+  "split_rule": "whole Time groups; closest attainable 70/15/15 chronological proportions",
+  "scaler": "StandardScaler fit on training only; applied unchanged to validation and test",
+  "resampling": "SMOTE-ENN fit on training partition only; validation and test untouched",
+  "threshold_rule": "maximize validation F1; test evaluated at that fixed threshold",
+  "bootstrap_repetitions": 2000,
+  "selected_explanation_model_by_validation_average_precision": "Random forest | class weight",
+  "split_summary": {
+    "train": {
+      "rows": 199364,
+      "frauds": 384,
+      "fraud_rate": 0.0019261250777472363,
+      "time_min": 0.0,
+      "time_max": 132928.0
+    },
+    "validation": {
+      "rows": 42722,
+      "frauds": 56,
+      "fraud_rate": 0.0013108000561771452,
+      "time_min": 132929.0,
+      "time_max": 151328.0
+    },
+    "test": {
+      "rows": 42721,
+      "frauds": 52,
+      "fraud_rate": 0.00121719997191077,
+      "time_min": 151329.0,
+      "time_max": 172792.0
+    }
+  },
+  "resampled_training_rows": 397960,
+  "resampled_training_frauds": 198980,
+  "resampled_training_legitimate": 198980,
+  "versions": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "scikit_learn": "1.7.2",
+    "imbalanced_learn": "0.14.0",
+    "xgboost": "3.1.1",
+    "matplotlib": "3.10.7"
+  },
+  "smote_enn_fit_resample_seconds": 1298.4,
+  "logical_cpu_count": 8
+}

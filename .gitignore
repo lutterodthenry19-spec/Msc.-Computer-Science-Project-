@@ -1,0 +1,5 @@
+data/creditcard.csv
+data/creditcardfraud.zip
+results/reviewer_safe/*.tif
+__pycache__/
+*.py[cod]
